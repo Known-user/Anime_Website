@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Lover</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        .row {
+            justify-content: center;
+        }
+
+        div.last {
+            justify-content: center;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .middle {
+            text-align: center;
+        }
+
+        div.btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        #anime {
+            height: 15rem;
+            background-color: yellow;
+        }
+
+        .container1 {
+            height: 34rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header,
+        nav.navbar {
+            background-color: #282828;
+            color: #c3c7cd;
+        }
+
+        .btn {
+            border-color: #c3c7cd;
+            color: #c3c7cd;
+        }
+
+        li.nav-item,
+        a {
+            color: #c3c7cd;
+        }
+
+        .row,
+        main {
+            background-color: #1f1f1f;
+        }
+
+        .card {
+            background-color: black;
+            color: #c3c7cd;
+            border: 0.01px solid #c3c7cd;
+            margin: 0 10px;
+            border-radius: 30px;
+            width: 16rem;
+            overflow: hidden;
+            height: 28rem
+        }
+
+        .card-body,
+        .card-title {
+            margin: 0;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-img-top {
+            height: 11rem;
+        }
+
+        .cat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dcat {
+            text-align: center;
+            color: #c3c7cd;
+        }
+
+        .view-image {
+            height: 8rem;
+            width: 19rem;
+        }
+
+        .end {
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .lend {
+            height: 12rem;
+            width: 45rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 6rem;
+            justify-content: center;
+            align-content: center;
+        }
+
+        h4 {
+            text-align: end;
+        }
+
+        .lend1 ul li {
+            list-style: none;
+        }
+        footer{
+            background-color:  #282828;
+            color: #c3c7cd ;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><img src="img/final.png" height="90px" width="190px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manga</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            News
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Anime News</a>
+                            <a class="dropdown-item" href="#">Anime Awards</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Anime MOvie Night</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Games</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="search.html">
+                    <input class="form-control mr-sm-2 " id="search1" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="btn" onclick="pass()">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="container1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.deccanherald.com/sites/dh/files/Picture1-1168554-1670222548.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapers.com/images/high/asta-black-clover-4k-demon-devil-liebe-fusion-z0v7x48fojyhwxnj.webp"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fictionhorizon.com/wp-content/uploads/2022/07/naruto.jpg" width="120px"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVLQZdOifReCk2coZBa92CIs-KheD4og2RJ5YbFBNiKDrOKuNegM5egRnqxOaFarSuPgPYtFJt0nsCQaLELVPxeBOTEZKqud5jj3.jpg?r=a07"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Demon Slayer: Kimetsu no Yaiba</h5>
+                        <p class="card-text">After a demon attack leaves his family slain and his sister cursed, Tanjiro
+                            embarks upon a perilous journey to find a cure and avenge those he's lost.</p>
+                        <a href="https://gogoanime.llc/category/kimetsu-no-yaiba" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX4bqLSNCi1lUGpV7LLl6RcduvyqK_MdnbMkLebwCJfAA5gCVqtIzoFKYIFwYs9Ja75ZJYs936Om6iZdF7sZDcF8cy0vYDJa4Cei.jpg?r=d7c"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">One-Punch Man</h5>
+                        <p class="card-text">The most powerful superhero in the world can kill anyone with one blow. But
+                            nothing can challenge him, so he struggles with ennui and depression.</p>
+                        <a href="https://gogoanime.llc/category/one-punch-man" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcIGMmwYc2gApwgnckv29wwGoNCTA0WqkDB53drbsBkEb9jPzrIxZLLk3jbl_ON2EAodSli2wIW8OWGdXdBG9GaVtrwqcU3js-51.jpg?r=888"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chainsaw Man</h5>
+                        <p class="card-text">After being left for dead, Denji turns into a devil-human hybrid with
+                            chainsaw powers, and gets recruited into a governmental devil hunting agency.</p>
+                        <a href="https://gogoanime.llc/category/chainsaw-man" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX5om45MVlOdl8FSZ0j3nWEUlWRYdBRbN9m8M_qBJNHXqQJcbcryX_LQB5dmo_yj1WJGqtI00u9Q6zO7spXqQ2mWCEdhRsEkitl-plAcTbzgy9KggGqLnZKWSAgwDt-kptQ_fVtDGOD26o97Y_8tcCX5AJa3z38GLxHgvEaeIdlKDbtMTBYCfQX2E3p1G8m1bzgd-RCtoX2IaUGLbNCYHRz2h2LNIY6PPhvvarz0RhJmh3TDDsPn8uqPu4E_K3T_4thrDIssnXwLw4AUU5u9MuKjACMAloQ51xBUu4ZH-cPR_4GnQwnvk67Id4aYR-oiuAS-zlM4K5ayuL62eb5DDHXlSJnBQOAgXuk4Hmsgbg4umrV0s9MCK03FTXQyHSXbkvr8HI8CD6_hiTs4YjvJj8puTHBjscXHdRebwOtEfAGdmg.jpg?r=b45"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">My Hero Academia</h5>
+                        <p class="card-text">After he saves a bully from a Villain, a normal student is granted a
+                            superpower that allows him to attend a high school training academy for Heroes.</p>
+                        <a href="https://gogoanime.llc/category/boku-no-hero-academia" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQNFGhIRxlQF98k9d1abh5UbiSsKTpglABkWbz4gkU1j1lbZxWFPQV7KELXAMjTg9ZD0waQ_qOX1aMFDfjGJ6qWts4-731m8zsK1.jpg?r=739"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jujutsu Kaisen</h5>
+                        <p class="card-text">With his days numbered, high schooler Yuji decides to hunt down and consume
+                            the remaining 19 fingers of a deadly curse so it can die with him.</p>
+                        <a href="https://gogoanime.llc/category/jujutsu-kaisen-tv" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTu-TO96ZBQLew5yss50EX5BJVJfQJcTbAiFdMTaUHX41GVnL_QbWspvex5T5D9tQ7HvZn320BJ8qRkLAXDRCAE1eC7k0nTYb-uOMLUBhXV_OYwCJycfPJ8g8-KWtpKrPTQtzLGE1xtvtCcyLdjbg0WGHk4YuJYycP9us1uH1WPlcJyghz1XxgD0Jb5P2d0GY1Y_aekxX6SaUPtNtbd9avvGcqq_agNwN6FdSe47OVPZ_0lHCaQCISib0-uc6hwOpYLK5tmy9fH1dpR5QAjDa1A0R8e39nY6N-qDU1UoApay1Lv63QDe0r7q8i5fNshVGeeVhE4BtM1SsXTCt4BRhTbqnhEvBymD9N0hEi3FM45FBdVFG7MB710IJiGHCa7ilzZDNQ6aSn_CL_mfEpyV0AqB3qL14jNa6xZs17zinIuuOg.jpg?r=7cd"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Lock</h5>
+                        <p class="card-text">High school soccer players from across Japan gather for a controversial
+                            project designed to create the best — and most egoistic — striker in the world.</p>
+                        <a href="https://gogoanime.llc/category/blue-lock" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR29QhOqM-lq0mprNXdO5693yzVK4OsLM-3wS9YxGtDx3tQROrv_dUZwJG2uFDwsFb3CwJpyjH6Rjg7EkY0uSwAUjyiRSHASkfGa.jpg?r=e3d"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DEATH NOTE</h5>
+                        <p class="card-text">When a Japanese high schooler comes into possession of a mystical notebook,
+                            he finds he has the power to kill anybody whose name he enters in it.</p>
+                        <a href="https://gogoanime.llc/category/death-note" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaFvAmiuLSrZZPfRrWbmAEfw2yiYkKavOsmQ56DLXZpq0rFf3e1EwCb4ZMF01y1HULYPNSIEFtz62c7No7loeZRT-ION-NPQGYAj.jpg?r=b3c"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Assassination Classroom</h5>
+                        <p class="card-text">A destructive alien who is threatening Earth becomes a schoolteacher whose
+                            students are tasked with killing him, even though they adore his fun ways.</p>
+                        <a href="https://gogoanime.llc/category/ansatsu-kyoushitsu-tv-" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWO115T0jPLE8TbeNjAuVBhOURkLawA7v0azpltGrL6tLWKo8sZqytsDM6oHyEOK1MPWG6sxVttqKyff-l0ZF2fuxGCPDf0uzAeP.jpg?r=6e2"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bleach</h5>
+                        <p class="card-text">After teenager Ichigo Kurosaki acquires superpowers from wounded soul
+                            reaper Rukia Kuchiki, the two of them join forces to round up lost souls.</p>
+                        <a href="https://gogoanime.llc/category/bleach" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcEQFzCWJDpRSIVR0kn2QBUD8u4TxKCghZ45yNwcEalV27-hhGNh32G5Scj4ILHOKpLAnElXEZuLL3DnEOmhxLSeAiF6aI4y65P5DW-d_DkJ-9PCRZEMzJK41sGXG5hnN_49sw.jpg?r=79b"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JoJo's Bizarre Adventure</h5>
+                        <p class="card-text">Multiple generations of the Joestar family -- all with the same nickname --
+                            confront supernatural villains through a series of time periods.</p>
+                        <a href="https://gogoanime.llc/category/jojos-bizarre-adventure" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf4KsqZqqGjB9kebQzIUYwuwHthpzGtGojwmfvtLHuI7k1BUYpwnZaKU_BsEZl8kkTitn4oB1s4doRStnh6SF9FY2d5ZwiSYIrByOev77ubZziG_MXtQBoB4_7oVf51e23NLaA.jpg?r=042"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BAKI</h5>
+                        <p class="card-text">While martial arts champion Baki Hanma trains hard to surpass his legendary
+                            father, five violent death row inmates descend upon Tokyo to take him on.</p>
+                        <a href="https://gogoanime.llc/category/baki" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://occ-0-4345-3647.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABclCERCjNS9zrbcn1vOqV6Z9wGk1ewLAYk3x3u6lUwNGIugCfvpNgoW5tAMsa6r42_7Sfx3c6XJanl1SLSHs7eARrCDOIyXPtB1q.jpg?r=22b"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hunter X Hunter</h5>
+                        <p class="card-text">To fulfill his dreams of becoming a legendary Hunter like his dad, a young
+                            boy must pass a rigorous examination and find his missing father.</p>
+                        <a href="https://gogoanime.llc/category/hunter-x-hunter" class="btn btn-primary">Watch Now</a>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="cat">
+                <div class="dcat"><img class="view-image"
+                        src="https://static.crunchyroll.com/cxweb/assets/img/home/yuzu.png"
+                        srcset="https://static.crunchyroll.com/cxweb/assets/img/home/yuzu@2x.png 2x" alt="Yuzu.">
+                    <h3
+                        class="heading--nKNOf heading--is-xxs--1CKSn heading--is-family-type-one--GqBzU view-all-feed-section-title">
+                        Still looking for something to watch? <br> Check out our full library</h3>
+                </div>
+            </div>
+            <div class="last">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><br><br><br>
+    </main>
+
+    <footer>
+        <div class="end">
+            <div class="lend">
+                <div class="lend1">
+                    <h4>Navigation</h4>
+                    <div class="cent">
+                        <ul>
+                            <li>Browse Popular</li>
+                            <li>Browse Manga</li>
+                            <li>Games</li>
+                            <li>News</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lend1">
+                    <h4>Connect With Us</h4>
+                    <div class="cent">
+                        <ul>
+                            <li>YouTube</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lend1">
+                    <h4>Account</h4>
+                    <div class="cent"></div>
+                    <ul>
+                        <li>Create Account</li>
+                        <li>Login In</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
