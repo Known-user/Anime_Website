@@ -12,8 +12,12 @@
     <style>
         header,
         nav.navbar {
-            background-color: #282828;
+            background-color: #181818;
             color: #c3c7cd;
+        }
+        #logo{
+            height: 8rem;
+            width: 20rem;
         }
 
         .btn {
@@ -26,9 +30,15 @@
             color: #c3c7cd;
         }
 
+
         #cardContainer {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
+        }
+
+        #sinfo {
+            color: #c3c7cd;
+            font-size: 4rem;
         }
 
         .card {
@@ -47,6 +57,38 @@
             border-radius: 30px;
             overflow: hidden;
         }
+        
+        .end {
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .lend {
+            height: 12rem;
+            width: 45rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 6rem;
+            justify-content: center;
+            align-content: center;
+        }
+
+        h4 {
+            text-align: end;
+        }
+
+        .lend1 ul li {
+            list-style: none;
+        }
+        footer{
+            background-color:  #181818;
+            color: #c3c7cd ;
+        }
+
+
     </style>
 
 </head>
@@ -54,7 +96,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="img/icon1.png" height="90px" width="190px" alt=""></a>
+            <a class="navbar-brand" href="#"><img id="logo"  src="img/LOGO.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -94,6 +136,7 @@
     </header>
 
     <main>
+        <div id="sinfo">Search results for : </div>
         <div id="cardContainer">
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
@@ -108,7 +151,42 @@
     </main>
 
     <footer>
+        <div class="end">
+            <div class="lend">
+                <div class="lend1">
+                    <h4>Navigation</h4>
+                    <div class="cent">
+                        <ul>
+                            <li>Browse Popular</li>
+                            <li>Browse Manga</li>
+                            <li>Games</li>
+                            <li>News</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lend1">
+                    <h4>Connect With Us</h4>
+                    <div class="cent">
+                        <ul>
+                            <li>YouTube</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lend1">
+                    <h4>Account</h4>
+                    <div class="cent"></div>
+                    <ul>
+                        <li>Create Account</li>
+                        <li>Login In</li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
+        </div>
 
     </footer>
 

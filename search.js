@@ -9,6 +9,8 @@ const key = "anime"
 const name = localStorage.getItem(key)
 console.log(name)
 
+sinfo.innerHTML = `Search results for : ${name}`
+
 fetch(`https://gogoanime.consumet.stream/search?keyw=${name}`)
     .then((response) => { return response.json() })
     .then((animelist) => {
