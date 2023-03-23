@@ -1,7 +1,7 @@
   ## ANIME LOVER
 
 Anime Lover - Watch Ad-free Anime
-Ashanime is an Ad free responsive web application built with the intention of providing a pleasent anime viewing experience.
+Anime Lover is an Ad free responsive web application built with the intention of providing a pleasent anime viewing experience.
 
 WEBSITE LINK: https://known-user.github.io/Anime_Website.github.io/
 
@@ -39,7 +39,7 @@ This app would not have been possible without the kind and rapid support of the 
 - All features are not functional
 
 As it is one of my earliest project , 2nd to be precise and i dont even have any contributors thats why i am not making it fully functional but for sure in future i will work on it.
-Sorry gor the inconvenience.  
+Sorry for the inconvenience.  
 
 
 ## Support
