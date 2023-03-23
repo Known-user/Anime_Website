@@ -11,7 +11,7 @@ WEBSITE LINK: https://known-user.github.io/Anime_Website.github.io/
 ## Screenshots
 
 
-[![front.png](https://user-images.githubusercontent.com/128237946/227095134-26c0c597-f862-42e8-aa2e-3c41d34346c1.png)
+![front.png](https://user-images.githubusercontent.com/128237946/227095134-26c0c597-f862-42e8-aa2e-3c41d34346c1.png)
 
 
 ![mid.png](https://user-images.githubusercontent.com/128237946/227095133-ba349688-0da2-49cf-a944-7454d89a2fd3.png)
