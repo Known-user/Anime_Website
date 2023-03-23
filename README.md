@@ -11,10 +11,8 @@ WEBSITE LINK: https://known-user.github.io/Anime_Website.github.io/
 ## Screenshots
 
 
-![Website Screenshot]()
-![Website Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![Website Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+![IMG-20230322-WA0010.jpg](https://user-images.githubusercontent.com/128237946/227094318-af095980-1b38-4bd2-af24-bb223e3ebde8.jpg)
 
 ## Website Features
 
